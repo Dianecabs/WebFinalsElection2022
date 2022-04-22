@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #ffc48e;
+    
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+.navbar {
+    z-index: 2;
+    background-color: #ae3e25 ;
+}
+.nav-item {
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.25s ease-out;
+}
+a:hover {
+    color: rgb(254, 214, 38);
+}
+.landing {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("./logos/ufeh6csy.bmp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    width: 100%;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: grayscale(100%);
+    background-color: rgba(255, 255, 255, 0.007);
+}
+.right h1 {
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.right h2 {
+    color: #fff;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+
+}
+.info {
+    padding: 25px;
+    margin-top: 80px;
+}
+.box {
+    margin-top: 20px;
+    padding: 50px;
+    color: #fff;
+    background-color: #ae3e25c6 ;
+    border-radius: 30px;
+}
+.box h1 {
+    font-size: 70px;
+}
+.box p {
+    padding: 10px;
+}
+.candidates {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.card {
+    margin: 10px;
+    min-width: 300px;
+    flex-basis: 30%;
+    
+    background-color:#ffc48e ;
+}
+.card-body {
+    color: #fff;
+    background-color:#ae3e25c6 ;
+}
+.card-body h1 {
+    font-weight: 600;
+}
+.card img {
+    height: 60vh;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
